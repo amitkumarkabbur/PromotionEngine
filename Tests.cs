@@ -29,7 +29,7 @@ namespace UnitTestProject
       {
           Order order = new Order(1, new List<Product>() { new Product("A", 50.0), new Product("A", 50.0), new Product("A", 50.0), 
                                     new Product("B", 30.0), new Product("B", 30.0), new Product("B", 30.0), new Product("B", 30.0), new Product("B", 30.0),
-                                    new Product("C", 20.0), new Product("D", 30.0)});
+                                    new Product("C", 20.0), new Product("D", 15.0)});
           Assert.AreEqual(280, PromotionBusinessRules.GetFinalPrice(order));
       }
     }
